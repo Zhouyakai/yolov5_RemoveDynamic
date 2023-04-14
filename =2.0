@@ -1,0 +1,29 @@
+Collecting pycocotools
+  Using cached pycocotools-2.0.6.tar.gz (24 kB)
+  Installing build dependencies: started
+  Installing build dependencies: finished with status 'done'
+  Getting requirements to build wheel: started
+  Getting requirements to build wheel: finished with status 'done'
+  Preparing metadata (pyproject.toml): started
+  Preparing metadata (pyproject.toml): finished with status 'done'
+Requirement already satisfied: matplotlib>=2.1.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from pycocotools) (3.7.1)
+Requirement already satisfied: numpy in /home/yakai/.local/lib/python3.8/site-packages (from pycocotools) (1.23.4)
+Requirement already satisfied: fonttools>=4.22.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (4.39.3)
+Requirement already satisfied: packaging>=20.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (23.0)
+Requirement already satisfied: contourpy>=1.0.1 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (1.0.7)
+Requirement already satisfied: pillow>=6.2.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (9.5.0)
+Requirement already satisfied: pyparsing>=2.3.1 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (3.0.9)
+Requirement already satisfied: python-dateutil>=2.7 in /home/yakai/.local/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (2.8.2)
+Requirement already satisfied: importlib-resources>=3.2.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (5.12.0)
+Requirement already satisfied: cycler>=0.10 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (0.11.0)
+Requirement already satisfied: kiwisolver>=1.0.1 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from matplotlib>=2.1.0->pycocotools) (1.4.4)
+Requirement already satisfied: zipp>=3.1.0 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from importlib-resources>=3.2.0->matplotlib>=2.1.0->pycocotools) (3.15.0)
+Requirement already satisfied: six>=1.5 in /home/yakai/anaconda3/envs/yolov5/lib/python3.8/site-packages (from python-dateutil>=2.7->matplotlib>=2.1.0->pycocotools) (1.16.0)
+Building wheels for collected packages: pycocotools
+  Building wheel for pycocotools (pyproject.toml): started
+  Building wheel for pycocotools (pyproject.toml): finished with status 'done'
+  Created wheel for pycocotools: filename=pycocotools-2.0.6-cp38-cp38-linux_x86_64.whl size=425724 sha256=a83aab838444ffd0dbc6f3b3d23f649f38bb83f533b2293b78fb46a3e82724a1
+  Stored in directory: /home/yakai/.cache/pip/wheels/3e/08/ac/58126fe59992032701437336493f6132e1b72381a62d00b595
+Successfully built pycocotools
+Installing collected packages: pycocotools
+Successfully installed pycocotools-2.0.6

@@ -1,0 +1,33 @@
+python detect.py --source ./data/images/bus.jpg --weights ./weights/yolov5x.pt --conf 0.25
+
+#这个可用!
+python detect.py --source ./data/images/bus.jpg --weights ./weights/yolov5x.pt --conf 0.25 --save-txt  
+#可以输出两个端点,并且还有类别和置信度.保存到detect result
+python detect.py --source ./data/images/ --weights ./weights/yolov5x.pt --conf 0.25 --save-txt 
+
+python detect.py --source /home/jy/Desktop/dataset/01/image_0/ --weights ./weights/yolov5x.pt --conf 0.25 --save-txt
+ 
+#Kitti00-4541张图片-用时612.439s-平均0.1349s--7.41fps
+python detect.py --source /home/jy/Desktop/dataset/00/image_0/ --weights ./weights/yolov5x.pt --conf 0.25 --save-txt 
+
+python detect.py --source /home/jy/Desktop/dataset/TUM/rgbd_dataset_freiburg3_walking_xyz/rgb/ --weights ./weights/yolov5x.pt --conf 0.25 --save-txt 
+
+#TUM_rgbd_dataset_freiburg3_walking_halfsphere/
+python detect.py --source /home/jy/Desktop/dataset/TUM/rgbd_dataset_freiburg3_walking_halfsphere/rgb/ --weights ./weights/yolov5x.pt --conf 0.25 --save-txt 
+
+
+#改变imgsize,加速识别,用yolov5s,做到0.015s一张.  859张图片36.714s
+python detect.py --source /home/jy/Desktop/dataset/TUM/rgbd_dataset_freiburg3_walking_xyz/rgb/ --weights ./weights/yolov5s.pt --conf 0.5 --save-txt --img-size 320
+
+#使用灰度图,加速识别,用yolo5s,单张识别速度感觉变化不大,但859张图片共29.702s
+python detect.py --source /home/jy/Desktop/dataset/TUM/rgbd_dataset_freiburg3_walking_xyz/rgb/ --weights ./weights/yolov5s.pt --conf 0.5 --save-txt --img-size 320
+
+#使用灰度图,改变imgsize为224,加速识别,用yolo5s,单张识别速度0.01s,859张图片共25.519s
+python detect.py --source /home/jy/Desktop/dataset/TUM/tum_fr3_walking_xyz/rgb/ --weights ./weights/yolov5s.pt --conf 0.4 --save-txt --img-size 224
+
+#去除了程序中的多余的保存图片,保存txt等操作,使得859张图片共耗时13.507s,63fps
+python detect_speedup.py --source /home/jy/Desktop/dataset/TUM/tum_fr3_walking_xyz/rgb/ --weights ./weights/yolov5s.pt --conf 0.4 --save-txt --img-size 224
+
+
+python detect_speedup_send.py --source /home/jy/Desktop/dataset/TUM/tum_fr3_walking_xyz_afterchange/rgb/ --weights ./weights/yolov5s.pt --conf 0.4 --save-txt --img-size 224
+
